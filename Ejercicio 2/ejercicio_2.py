@@ -28,6 +28,12 @@ class Trabajador(Persona):
         self.departamento = departamento
         self.puesto = puesto
 
+    def presentation(self):
+            Persona.presentation(self)
+            print(f"Trabajo en el departamento: {self.departamento} y tengo el puesto {self.puesto}")
+
 nombre = 'Alberto'
 persona_1 = Persona(nombre, 20)
+trabajador_1 = Trabajador(nombre,20,"BigData","Data Engeneering")
 persona_1.presentation()
+trabajador_1.presentation()
