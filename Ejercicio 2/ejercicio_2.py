@@ -53,3 +53,6 @@ my_var_list = [ "Andrea", 42, "Ventas", "Manager"]
 trabajador_2 = Trabajador(my_var_list[0],my_var_list[1],my_var_list[2],my_var_list[3])
 trabajador_2.presentacion()
 
+my_var_dict = { 'nombre': "Andrea", 'edad': 42, 'departamento': 'Ventas' , 'puesto': 'Manager'}
+trabajador_3 = Trabajador(my_var_dict['nombre'],my_var_dict['edad'],my_var_dict['departamento'],my_var_dict['puesto'])
+trabajador_3.presentacion()
