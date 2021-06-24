@@ -18,7 +18,7 @@ class Persona(object):
 class Trabajador(Persona):
     """Clase que representa a un Trabajador"""
 
-    def __init__(self, nombre, edad, departamento, puesto):
+    def __init__(self, nombre, edad,  departamento ="Data", puesto ="Analayst"):
         """Constructor de clase Trabajador"""
 
         # Invoca al constructor de clase Persona
