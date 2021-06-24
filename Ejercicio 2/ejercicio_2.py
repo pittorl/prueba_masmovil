@@ -48,3 +48,8 @@ trabajador_1.presentacion()
 # y self.nombre tomara el valor Alberto ya que el objeto Persona tiene nombre y edad
 #
 ######################################################################################################################
+
+my_var_list = [ "Andrea", 42, "Ventas", "Manager"]
+trabajador_2 = Trabajador(my_var_list[0],my_var_list[1],my_var_list[2],my_var_list[3])
+trabajador_2.presentacion()
+
