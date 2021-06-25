@@ -71,3 +71,14 @@ datediff = BashOperator(
     params = {'DATE' : 'this-should-be-a-date'},
     dag=dag)
 
+######################################################################################################################
+# Ejercicio 3 apartado 4
+#¿Qué es un Hook? ¿En qué se diferencia de una conexión? Puedes responder en un comentario dentro del código.
+#
+#Un hook es un objeto que nos permite establecer una conexion de distintas formas en el que se encapsula varios metodos
+#   para interactuar con la conexion
+#Una conexion solo establece un tipo de conexion no encapsula ciertos metodos sobre esta conexion.
+#
+######################################################################################################################
+
+
