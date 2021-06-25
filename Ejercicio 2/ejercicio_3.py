@@ -26,3 +26,35 @@ end = DummyOperator(
     dag=dag
     )
 end >> start
+
+task_1 =DummyOperator(
+            task_id='task_1'
+            dag=dag
+            )
+
+task_3 =DummyOperator(
+            task_id='task_3'
+            dag=dag
+            )
+
+task_5 =DummyOperator(
+            task_id='task_5'
+            dag=dag
+            )
+
+task_2 =DummyOperator(
+            task_id='task_2'
+            dag=dag
+            )
+
+task_2 >> [task_1, task_3, task_5]
+
+task_4 =DummyOperator(
+            task_id='task_4'
+            dag=dag
+            )
+
+task_4 >> [task_1, task_3, task_5]
+
+
+
