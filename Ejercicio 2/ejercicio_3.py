@@ -56,5 +56,18 @@ task_4 =DummyOperator(
 
 task_4 >> [task_1, task_3, task_5]
 
+dateNow= {{"ds"}}
 
+diff_date = """echo La diferencia entre la fecha introducida : {params.DATE} y la fecha actual : {dateNow} es :{{ ds - params.DATE }}"""
+
+t1 = BashOperator(
+    task_id='print_date',
+    bash_command='date',
+    dag=dag)
+
+datediff = BashOperator(
+    task_id='datediff',
+    bash_command=diff_date,
+    params = {'DATE' : 'this-should-be-a-date'},
+    dag=dag)
 
